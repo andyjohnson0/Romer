@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:orientation="vertical"
+	android:paddingBottom="@dimen/listBottomPadding"
+	android:background="@color/backgroundOpaque">
+	<TextView
+		android:id="@+id/headerTxt"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_gravity="center_horizontal"
+		android:paddingTop="@dimen/listHeaderTopPadding"
+		android:text="@string/routeActivityTitle"
+		android:textSize="@dimen/listHeaderTextSize"
+		android:textStyle="bold"/>
+	<!-- The route's name. Padded clear of the round screen's edge, and shortened with an ellipsis if it's long. -->
+	<TextView
+		android:id="@+id/routeNameTxt"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:gravity="center_horizontal"
+		android:paddingLeft="@dimen/marginSizeLarge2"
+		android:paddingRight="@dimen/marginSizeLarge2"
+		android:paddingBottom="@dimen/listHeaderBottomPadding"
+		android:singleLine="true"
+		android:ellipsize="end"
+		android:textAppearance="@android:style/TextAppearance.Small"/>
+    <androidx.wear.widget.WearableRecyclerView
+        android:id="@+id/waypoint_options_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:scrollbars="vertical"/>
+</LinearLayout>

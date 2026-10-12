@@ -1,0 +1,10 @@
+<menu
+	xmlns:android="http://schemas.android.com/apk/res/android">
+
+	<item
+	    android:id="@+id/newRoute"
+	    android:title="@string/newRoute" />
+	<item
+	    android:id="@+id/importGpx"
+	    android:title="@string/importGpx" />
+</menu>

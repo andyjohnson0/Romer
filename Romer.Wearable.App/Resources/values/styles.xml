@@ -1,0 +1,144 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	
+	<!-- Splash screen theme-->
+	<style name="Theme.App.Starting" parent="Theme.SplashScreen">
+		<item name="windowSplashScreenBackground">@color/backgroundOpaque</item>
+		<item name="windowSplashScreenAnimatedIcon">@mipmap/ic_launcher</item>>
+		<item name="postSplashScreenTheme">@style/Theme.App</item>
+	</style>
+
+
+	
+	
+	<!-- Main theme - day colours -->
+	<style name="Theme.App" parent="Theme.AppCompat.NoActionBar">
+		<!-- Accent colour -->
+		<item name="colorAccent">@color/colorAccent</item>
+		
+		<!-- Image button styling -->
+		<item name="imageButtonStyle">@style/Theme.App.ImageButton</item>		
+		
+		<!-- Colour for disabled text. Defined in attr.xml. -->
+		<item name="appDayNightDisabledText">@color/disabledText</item>
+		
+		<!-- Foreground tint for enabled image view. Defined in attr.xml. -->
+		<item name="appDayNightImageViewForegroundTint">@color/backgroundTransparent</item>		
+		
+		<!-- Foreground tint for disabled image view. Defined in attr.xml and applied in enable_disable_image_view selector. -->
+		<item name="appDayNightDisabledImageViewForegroundTint">@color/disabledImageView</item>
+
+		<!-- Kilsten's WearableAlertDialog and WearableTaskDialog -->
+		<item name="dialogTheme">@style/Theme.App.Dialog</item>
+	</style>
+
+	<!-- Dialogs. Black window background, instead of AppCompat's grey, which shows around the dialog's content on a
+	     round screen. A theme overlay, so the day or night theme's colours still apply. -->
+	<style name="Theme.App.Dialog" parent="ThemeOverlay.AppCompat.Dialog">
+		<item name="android:windowBackground">@color/backgroundOpaque</item>
+		<item name="colorBackgroundFloating">@color/backgroundOpaque</item>
+	</style>
+
+	<!-- Define a custom day style for AppCompatImageButton controls, including those in AndroiExt.Wear.
+	     We apply this in the main day theme below. -->
+	<style name="Theme.App.ImageButton" parent="Widget.AppCompat.ImageButton">
+		<!-- Foreground tint is set to transparent so that the default colours show through -->
+		<item name="android:tint">@color/backgroundTransparent</item>
+		<item name="android:backgroundTint">@color/buttonBackgroundTint</item>
+	</style>	
+	
+	<!-- Settings theme - day colours -->
+	<style name="Theme.App.Settings" parent="Theme.AppCompat.NoActionBar">
+		<item name="android:textColorPrimary">@color/colorAccent</item>
+		<!-- Dialog titles -->
+		<item name="colorAccent">@color/colorAccent</item>
+		<!-- Category titles -->
+		<item name="android:textColor">@color/defaultText</item>
+		<!-- Item titles -->
+		<item name="android:textColorSecondary">@color/defaultText</item>
+		<!-- Summary text -->
+		<item name="alertDialogTheme">@style/Theme.App.Settings.AlertDialog</item>
+		<!-- List preference dialogs -->
+	</style>
+
+	<!-- Alert dialogs in settings (list preferences). Black background to match the other screens, instead of AppCompat's grey.
+	     A theme overlay, so the day or night settings theme's colours still apply. -->
+	<style name="Theme.App.Settings.AlertDialog" parent="ThemeOverlay.AppCompat.Dialog.Alert">
+		<item name="android:windowBackground">@color/backgroundOpaque</item>
+		<item name="colorBackgroundFloating">@color/backgroundOpaque</item>
+	</style>
+
+	<!-- Dialog with translucent background -->
+	<style name="Theme.App.ContextDialog" parent="android:Theme.Dialog">
+		<item name="android:windowIsTranslucent">true</item>
+		<item name="android:windowBackground">@color/backgroundSemiOpaque</item>
+		<item name="android:windowIsFloating">false</item>
+		<item name="android:windowFullscreen">true</item>
+		<item name="android:windowCloseOnTouchOutside">true</item>
+		<item name="android:layout_gravity">center</item>
+	</style>
+	
+	
+	
+	
+	
+	<!-- Main theme - night colours -->
+	<style name="Theme.App.NightColours" parent="Theme.AppCompat.NoActionBar">
+		<!-- Accent colour -->
+		<item name="colorAccent">@color/nightColorAccent</item>
+
+		<!-- Redefine text colours -->
+		<item name="android:textColorPrimary">@color/nightDefaultText</item>
+		<item name="android:textColorSecondary">@color/nightDefaultText</item>
+		<item name="android:textColorTertiary">@color/nightDefaultText</item>
+
+		<!-- Image button styling -->
+		<item name="imageButtonStyle">@style/Theme.App.ImageButton.NightColours</item>
+
+		<!-- Colour for disabled text. Defined in attr.xml. -->
+		<item name="appDayNightDisabledText">@color/nightDisabledText</item>
+		
+		<!-- Foreground tint for enabled image view. Defined in attr.xml. -->
+		<item name="appDayNightImageViewForegroundTint">@color/nightImageTint</item>
+		
+		<!-- Foreground tint for disabled image view. Defined in attr.xml and applied in enable_disable_image_view selector. -->
+		<item name="appDayNightDisabledImageViewForegroundTint">@color/nightDisabledImageView</item>
+
+		<!-- Kilsten's WearableAlertDialog and WearableTaskDialog -->
+		<item name="dialogTheme">@style/Theme.App.Dialog</item>
+	</style>
+	
+	<!-- Define a custom night style for AppCompatImageButton controls, including those in AndroiExt.Wear.
+	     We apply this in the main night theme. -->
+	<style name="Theme.App.ImageButton.NightColours" parent="Widget.AppCompat.ImageButton">
+		<item name="android:tint">@android:color/black</item>
+		<item name="android:backgroundTint">@color/nightButtonBackgroundTint</item>
+	</style>	
+	
+	<!-- Settings theme - night colours -->
+	<style name="Theme.App.Settings.NightColours" parent="Theme.AppCompat.NoActionBar">
+		<item name="android:textColorPrimary">@color/nightColorAccent</item>      <!-- Dialog titles -->
+		<item name="colorAccent">@color/nightColorAccent</item>                   <!-- Category titles -->
+		<item name="android:textColor">@color/nightDefaultText</item>             <!-- Item titles -->
+		<item name="android:textColorSecondary">@color/nightDefaultText</item>    <!-- Summary text -->
+
+		<item name="textColorAlertDialogListItem">@color/nightDefaultText</item>  <!-- List preference items -->
+		<item name="alertDialogTheme">@style/Theme.App.Settings.AlertDialog</item>  <!-- List preference dialogs -->
+	</style>
+
+	<!-- Dialog with translucent background -->
+	<style name="Theme.App.ContextDialog.NightColours" parent="android:Theme.Dialog">
+		<item name="android:windowIsTranslucent">true</item>
+		<item name="android:windowBackground">@color/backgroundSemiOpaque</item>
+		<item name="android:windowIsFloating">false</item>
+		<item name="android:windowFullscreen">true</item>
+		<item name="android:windowCloseOnTouchOutside">true</item>
+		<item name="android:layout_gravity">center</item>
+
+		<item name="android:textColorPrimary">@color/nightColorAccent</item>		<!-- Dialog titles -->
+		<item name="colorAccent">@color/nightColorAccent</item>		            <!-- Category titles -->
+		<item name="android:textColor">@color/nightDefaultText</item>		        <!-- Item titles -->
+		<item name="android:textColorSecondary">@color/nightDefaultText</item>		<!-- Summary text -->
+
+	</style>
+</resources>

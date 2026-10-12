@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="@dimen/dialogMargin">
+
+    <TextView
+        android:id="@+id/description"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@android:style/TextAppearance.Medium"
+        android:textStyle="bold"/>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/marginSizeLarge"/>
+
+    <LinearLayout
+        android:id="@+id/shareToWatch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <ImageButton
+            android:tooltipText="@string/shareToWatch"
+            android:contentDescription="@string/shareToWatch"
+            android:src="@drawable/ic_watch_white"
+            android:background="@drawable/button_round_states"
+            android:backgroundTint="@color/colorAccent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/marginSizeLarge"
+            android:text="@string/shareToWatch"
+            style="@android:style/TextAppearance.Medium"/>
+    </LinearLayout>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/marginSizeLarge"/>
+
+    <LinearLayout
+        android:id="@+id/shareToExternal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <ImageButton
+            android:tooltipText="@string/shareToExternal"
+            android:contentDescription="@string/shareToExternal"
+            android:src="@drawable/ic_apps_white"
+            android:background="@drawable/button_round_states"
+            android:backgroundTint="@color/colorAccent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/marginSizeLarge"
+            android:text="@string/shareToExternal"
+            style="@android:style/TextAppearance.Medium"/>
+    </LinearLayout>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/marginSizeLarge"/>
+
+    <LinearLayout
+        android:id="@+id/shareToPhone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <ImageButton
+            android:tooltipText="@string/shareToPhone"
+            android:contentDescription="@string/shareToPhone"
+            android:src="@drawable/ic_download_white"
+            android:background="@drawable/button_round_states"
+            android:backgroundTint="@color/colorAccent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/marginSizeLarge"
+            android:text="@string/shareToPhone"
+            style="@android:style/TextAppearance.Medium"/>
+    </LinearLayout>
+
+</LinearLayout>

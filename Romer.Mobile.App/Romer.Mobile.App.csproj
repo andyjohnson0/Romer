@@ -1,0 +1,38 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net10.0-android36.0</TargetFramework>
+    <SupportedOSPlatformVersion>30</SupportedOSPlatformVersion>
+    <OutputType>Exe</OutputType>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <ApplicationId>uk.andyjohnson.romer</ApplicationId>
+    <ApplicationVersion>1</ApplicationVersion>
+    <ApplicationDisplayVersion>1.0</ApplicationDisplayVersion>
+    <RootNamespace>Romer.Mobile.App</RootNamespace>
+    <AssemblyName>Romer.Mobile.App</AssemblyName>
+    <Nullable>enable</Nullable>
+    <Authors>Andrew Johnson</Authors>
+    <Product>Romer</Product>
+    <Copyright>Copyright © Andrew Johnson</Copyright>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="MPAndroidChart" Version="3.1.0.1" />
+    <PackageReference Include="Xamarin.AndroidX.ConstraintLayout" Version="2.2.2" />
+    <PackageReference Include="Xamarin.AndroidX.Core.SplashScreen" Version="1.2.0.3" />
+    <PackageReference Include="Xamarin.AndroidX.DocumentFile" Version="1.1.0.4" />
+    <PackageReference Include="Xamarin.AndroidX.Preference" Version="1.2.1.18" />
+    <!-- Preference 1.2.1.18 pulls in Fragment.Ktx 1.8.x, whose FragmentKt class duplicates the one in Fragment 1.9 and breaks D8. -->
+    <PackageReference Include="Xamarin.AndroidX.Fragment.Ktx" Version="1.9.0" />
+    <PackageReference Include="Xamarin.Google.Android.Material" Version="1.14.0.6" />
+    <PackageReference Include="Xamarin.GooglePlayServices.Wearable" Version="120.0.1.2" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Romer.DataLib\Romer.DataLib.csproj" />
+    <ProjectReference Include="..\Romer.CommonLib\Romer.CommonLib.csproj" />
+    <ProjectReference Include="..\Romer.GeoLib\Romer.GeoLib.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Kilsten.Android">
+      <HintPath>..\lib\Kilsten.Android.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+</Project>

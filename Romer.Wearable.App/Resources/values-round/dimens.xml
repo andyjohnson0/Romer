@@ -1,0 +1,9 @@
+<resources>
+
+	<!-- For round devices, values in this file override values with the same name in values\dimens.xml-->
+
+	<!-- Keeps the waypoint list's rows clear of the round screen's edge. Much wider and the grid reference wraps
+	     beside a four-digit altitude. -->
+	<dimen name="listItemSidePadding">16dp</dimen>
+
+</resources>

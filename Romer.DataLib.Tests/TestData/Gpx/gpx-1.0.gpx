@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gpx version="1.0" creator="test" xmlns="http://www.topografix.com/GPX/1/0">
+  <name>Old Format</name>
+  <wpt lat="51.5007" lon="-0.1246">
+    <ele>5</ele>
+    <name>Westminster</name>
+  </wpt>
+  <wpt lat="51.5081" lon="-0.0759">
+    <name>Tower</name>
+  </wpt>
+</gpx>

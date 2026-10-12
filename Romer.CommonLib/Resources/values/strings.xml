@@ -1,0 +1,97 @@
+<resources>
+
+	<string name="britishProviderDesc">British National Grid</string>
+	<string name="irishProviderDesc">Irish Grid</string>
+	<string name="usngProviderDesc">US National Grid</string>
+	<string name="utmProviderDesc">Universal Transverse Mercator (UTM)</string>
+	<string name="wgs84ProviderDesc">Latitude/Longitude (WGS84)</string>
+
+	<string name="northSymbol">N</string>
+	<string name="eastSymbol">E</string>
+	<string name="southSymbol">S</string>
+	<string name="westSymbol">W</string>
+	
+	<string name="degreeSymbol" translatable="false">\u00B0</string>
+
+	<!-- note: us english spellings here -->
+	<plurals name="metre">
+		<item quantity="one">meter</item>
+		<item quantity="other">meters</item>
+	</plurals>
+	<plurals name="kilometre">
+		<item quantity="one">kilometer</item>
+		<item quantity="other">kilometers</item>
+	</plurals>
+	<plurals name="foot">
+		<item quantity="one">foot</item>
+		<item quantity="other">feet</item>
+	</plurals>
+	<plurals name="mile">
+		<item quantity="one">mile</item>
+		<item quantity="other">miles</item>
+	</plurals>
+	
+	<string name="metreSymbol">m</string>
+	<string name="kilometreSymbol">km</string>
+	<string name="footSymbol">ft</string>
+	<string name="mileSymbol">mi</string>
+
+
+	<!-- Route etc-->
+	<string name="routes">Routes</string>
+	<plurals name="route">
+		<item quantity="one">Route</item>
+		<item quantity="other">Routes</item>
+	</plurals>
+	<plurals name="routeCount">
+		<item quantity="one">%d route</item>
+		<item quantity="other">%d routes</item>
+	</plurals>
+	<plurals name="routeAdd">
+		<item quantity="one">Add route</item>
+		<item quantity="other">Add routes</item>
+	</plurals>
+	<plurals name="routeEdit">
+		<item quantity="one">Edit route</item>
+		<item quantity="other">Edit %d routes</item>
+	</plurals>
+	<plurals name="routeDelete">
+		<item quantity="one">Delete route</item>
+		<item quantity="other">Delete routes</item>
+	</plurals>
+	<plurals name="routeDeleteCount">
+		<item quantity="one">Delete %d route</item>
+		<item quantity="other">Delete %d routes</item>
+	</plurals>
+
+	<!-- Waypoint etc-->
+	<string name="waypoints">Waypoints</string>
+	<plurals name="waypoint">
+		<item quantity="one">Waypoint</item>
+		<item quantity="other">Waypoints</item>
+	</plurals>
+	<plurals name="waypointCount">
+		<item quantity="one">%d waypoint</item>
+		<item quantity="other">%d waypoints</item>
+	</plurals>
+	<plurals name="waypointEdit">
+		<item quantity="one">Edit waypoint</item>
+		<item quantity="other">Edit %d waypoints</item>
+	</plurals>
+	<plurals name="waypointDelete">
+		<item quantity="one">Delete waypoint</item>
+		<item quantity="other">Delete waypoints</item>
+	</plurals>
+	<plurals name="waypointDeleteCount">
+		<item quantity="one">Delete %d waypoint</item>
+		<item quantity="other">Delete %d waypoints</item>
+	</plurals>
+
+
+	<!-- About dialog (InfoDialogFragment) -->
+	<string name="appVersion">Version %1$s</string>
+	<string name="appCopyright">Copyright © %1$s</string>
+	<string name="vendorName" translatable="false">Andrew Johnson</string>
+	<string name="vendorDomain" translatable="false">andyjohnson.uk</string>
+	<string name="vendorUrl" translatable="false">https://andyjohnson.uk</string>
+</resources>

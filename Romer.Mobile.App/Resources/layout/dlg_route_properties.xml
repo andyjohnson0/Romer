@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/dialogMargin">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/nameLabel"/>
+    <EditText
+        android:id="@+id/nameTxt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/nameLabel"
+        android:inputType="text"/>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/marginSizeMedium"/>
+
+   <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/descriptionLabel"
+        android:singleLine="true"/>
+    <EditText
+        android:id="@+id/descriptionTxt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/descriptionLabel"
+        android:minLines="2"
+        android:inputType="textMultiLine|textAutoComplete"/>
+
+</LinearLayout>

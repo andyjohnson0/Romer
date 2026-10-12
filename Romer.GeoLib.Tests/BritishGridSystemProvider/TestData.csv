@@ -1,0 +1,57 @@
+﻿## Test data for the British National Grid provider
+## Format: latitude,longitude,10-figure OS grid reference
+##
+## Points spread across Great Britain, covering most of its 100 km grid squares. Each row is a coordinate
+## conversion, not map data: the grid references were converted with https://gridreferencefinder.com.
+##
+## Checked independently in 2026 with ProjNet (EPSG:27700, using the OSGB36 7-parameter Helmert
+## transformation): every row agrees to within 1 m.
+##
+## Romer's provider uses the same Helmert transformation, which approximates Ordnance Survey's official
+## OSTN15 transformation. Compared with OSTN15 (OS's online transformation service, in 2026), Romer's
+## references for these points are a median 2.2 m and at most 5.0 m out, the largest on Scilly and the
+## Outer Hebrides. That's within everyday GPS error, but at 10 m precision about a third of these points
+## show a neighbouring square, and one does at 100 m: near Land's End, Romer gives SW 349 252 where
+## OSTN15 gives SW 350 252.
+
+58.646761,-3.0529976,ND 38984 73690
+58.510465,-6.2628937,NB 51816 65917
+56.795332,-7.6557541,NL 54855 81365
+55.306483,-5.7884216,NR 59664 07917
+54.635946,-4.8570728,NX 15704 30509
+54.514704,-3.6282349,NX 94690 14487
+54.086382,-3.1678391,SD 23704 66239
+53.399707,-4.5593262,SH 29942 92261
+51.890901,-5.2679443,SM 75228 26421
+51.800123,-2.4242020,SO 70845 11361
+50.068599,-5.7046509,SW 34997 25297
+50.243692,-3.7463379,SX 75575 39648
+50.576478,-1.2984467,SZ 49772 75428
+50.741670,0.24856567,TV 58748 95973
+51.392779,1.4251328,TR 38378 71539
+51.739361,0.92353821,TM 01948 08562
+52.961875,0.59875488,TF 74643 43661
+54.114163,-0.081367493,TA 25515 70399
+54.445590,-0.52021980,NZ 96057 06584
+54.697498,-1.1812019,NZ 52870 33915
+56.278436,-2.5941467,NO 63309 09711
+57.694974,-2.0111847,NJ 99432 67239
+57.854982,-3.7957764,NH 93528 86467
+56.817981,-4.2297363,NN 63996 71826
+54.885494,-2.6483917,NY 58502 54720
+52.844150,-1.2956142,SK 47540 27637
+51.452697,-1.3123512,SU 47879 72859
+52.446934,-3.2959843,SO 12015 84009
+56.992883,-3.9990234,NN 78646 90856
+60.270982,-1.6088104,HU 21742 54150
+60.605846,-1.1013794,HU 49305 91719
+60.860504,-0.87384224,HP 61276 20272
+49.966350,-6.3471794,SV 88371 16415
+50.578222,-1.2984467,SZ 49770 75622
+52.484871,-1.2387085,SP 51795 87711
+52.481421,1.7617607,TM 55525 93709
+55.634828,-2.3351955,NT 78996 37969
+54.995736,-3.0517960,NY 32808 67301
+56.933924,-7.5781631,NL 60844 96374
+57.814864,-8.5853004,NF 09203 99633
+55.643699,-1.6086280,NU 24732 38975

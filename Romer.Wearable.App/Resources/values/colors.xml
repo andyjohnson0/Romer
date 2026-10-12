@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+	<!-- Day colours -->
+	<color name="colorAccent">#EE6002</color>
+	<color name="defaultText">@android:color/primary_text_dark_nodisable</color>
+	<color name="disabledText">#616161</color>
+	<color name="disabledImageView">#616161</color>
+	<color name="buttonBackgroundTint">#808080</color>
+
+	<!-- Night colours -->
+	<color name="nightColorAccent">#BB2000</color>
+	<color name="nightDefaultText">#990000</color>
+	<color name="nightDisabledText">#440000</color>
+	<color name="nightImageTint">#80770000</color>
+	<color name="nightDisabledImageView">#220000</color>
+	<color name="nightButtonBackgroundTint">#990000</color>
+	
+	<!-- Accent colour to mimic Wear OS system buttons -->
+	<color name="systemAccent">#005A9E</color>
+
+	<!-- Backgrounds -->
+	<color name="backgroundTransparent">#00000000</color>
+	<color name="backgroundOpaque">#FF000000</color>
+	<color name="backgroundSemiOpaque">#BB000000</color>
+	<color name="backgroundTranslucent">#AA000000</color>
+	
+</resources>

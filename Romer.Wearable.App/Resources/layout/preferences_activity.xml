@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.wear.widget.SwipeDismissFrameLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:id="@+id/prefSwipeFrame"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:background="@color/backgroundOpaque">
+	<LinearLayout
+		android:id="@+id/prefsContainer"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:orientation="vertical"
+		android:paddingBottom="@dimen/listBottomPadding">
+		<TextView
+			android:id="@+id/prefHeaderTxt"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_gravity="center_horizontal"
+			android:paddingTop="@dimen/listHeaderTopPadding"
+			android:paddingBottom="@dimen/listHeaderBottomPadding"
+			android:textSize="@dimen/listHeaderTextSize"
+			android:textStyle="bold"/>
+		<androidx.fragment.app.FragmentContainerView
+			android:id="@+id/preferences_activity_fragment_container"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"/>
+	</LinearLayout>
+</androidx.wear.widget.SwipeDismissFrameLayout>

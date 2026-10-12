@@ -1,0 +1,32 @@
+﻿<PreferenceScreen
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+	
+	<PreferenceCategory
+		android:key="@string/prefs_advanced_key"
+		android:summary="@string/prefs_advanced_summary">
+	    <SwitchPreferenceCompat
+            android:key="@string/prefs_advanced_locationFetchOnStartup_key"
+            android:title="@string/prefs_advanced_fetchOnStartup_title"
+			android:summary="@string/prefs_advanced_fetchOnStartup_summary"/>
+		<ListPreference
+			android:key="@string/prefs_advanced_locationFixTimeout_key"
+			android:title="@string/prefs_advanced_gpsFixTimeout_title"
+			android:summary="@string/prefs_advanced_gpsFixTimeout_summary"
+			android:dialogTitle="@string/prefs_advanced_gpsFixTimeout_title"
+			android:entries="@array/prefs_advanced_gpsFixTimeout_entries"
+			android:entryValues="@array/prefs_advanced_gpsFixTimeout_values" />
+		<ListPreference
+			android:key="@string/prefs_advanced_locationSource_key"
+			android:title="@string/prefs_advanced_locationSource_title"
+			android:summary="@string/prefs_advanced_locationSource_summary"
+			android:dialogTitle="@string/prefs_advanced_locationSource_title"
+			android:entries="@array/prefs_advanced_locationSource_entries"
+			android:entryValues="@array/prefs_advanced_locationSource_values" />
+	    <SwitchPreferenceCompat
+            android:key="@string/prefs_advanced_keepScreenOnDuringLocationFetch_key"
+            android:title="@string/prefs_advanced_keepScreenOnFix_title"
+			android:summary="@string/prefs_advanced_keepScreenOnFix_summary"/>
+	</PreferenceCategory>
+	
+</PreferenceScreen>

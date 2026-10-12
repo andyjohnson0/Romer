@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+	<!-- These attributes are used in the day and night styles in styles.xml, where the values are set differently for each style. -->
+
+	<!-- Disabled text colour -->
+	<attr name="appDayNightDisabledText" format="color" />
+	<attr name="appDayNightDisabledImageViewForegroundTint" format="color" />
+
+	<!-- Tint for images -->
+	<attr name="appDayNightImageViewForegroundTint" format="color" />
+	
+</resources>

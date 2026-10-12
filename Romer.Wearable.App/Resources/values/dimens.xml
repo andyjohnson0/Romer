@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--
+    Because the window insets on round devices are larger than 15dp, this padding only applies
+    to square screens.
+    -->
+    <dimen name="boxInsetLayoutPadding">0dp</dimen>
+
+    <!--
+    This padding applies to both square and round screens. The total padding between the buttons
+    and the window insets is boxInsetLayoutPadding (above variable) on square screens and
+    innerFrameLayoutPadding (below variable) on round screens.
+    -->
+    <dimen name="innerFrameLayoutPadding">5dp</dimen>
+
+	<!-- Button sizes -->
+	<dimen name="buttonSizeStd">48dp</dimen>
+
+	<!-- -->
+	<dimen name="menuMargin">20dp</dimen>
+	
+	<!-- -->
+	<dimen name="marginSizeLarge2">32dp</dimen>
+	<dimen name="marginSizeLarge">16dp</dimen>
+	<dimen name="marginSizeMedium">8dp</dimen>
+	<dimen name="marginSizeSmall">4dp</dimen>
+	<dimen name="marginSizeSmall2">2dp</dimen>
+
+	<!-- Lists and headings -->
+	<dimen name="listItemSidePadding">8dp</dimen>  <!-- Wider on round screens: see values-round -->
+	<dimen name="listHeaderTextSize">17dp</dimen>
+	<dimen name="listHeaderTopPadding">12dp</dimen>
+	<dimen name="listHeaderBottomPadding">12dp</dimen>
+	<dimen name="listBottomPadding">24dp</dimen>
+	
+	<!-- Dialogs and headings -->
+	<dimen name="dialogHeaderTextSize">17dp</dimen>
+	<dimen name="dialogHeaderTopPadding">12dp</dimen>
+	<dimen name="dialogHeaderBottomPadding">12dp</dimen>
+	<dimen name="dialogBottomPadding">24dp</dimen>
+	
+</resources>

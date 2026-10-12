@@ -1,0 +1,47 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net10.0</TargetFramework>
+
+    <IsPackable>false</IsPackable>
+    <IsTestProject>true</IsTestProject>
+    <AssemblyName>Romer.GeoLib.Tests</AssemblyName>
+    <RootNamespace>Romer.GeoLib.Tests</RootNamespace>
+    <Nullable>enable</Nullable>
+    <Authors>Andrew Johnson</Authors>
+    <Product>Romer</Product>
+    <Copyright>Copyright © Andrew Johnson</Copyright>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="IrishGridSystemProvider\TestData.csv" />
+    <None Remove="BritishGridSystemProvider\TestData.csv" />
+    <None Remove="RouteProperties\Route1.csv" />
+    <None Remove="UsngGridSystemProvider\TestData.csv" />
+    <None Remove="UtmGridSystemProvider\TestData.csv" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="IrishGridSystemProvider\TestData.csv" />
+    <EmbeddedResource Include="BritishGridSystemProvider\TestData.csv" />
+    <EmbeddedResource Include="RouteProperties\Route1.csv" />
+    <EmbeddedResource Include="UsngGridSystemProvider\TestData.csv" />
+    <EmbeddedResource Include="UtmGridSystemProvider\TestData.csv" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="18.10.1" />
+    <PackageReference Include="MSTest.TestAdapter" Version="4.4.1" />
+    <PackageReference Include="MSTest.TestFramework" Version="4.4.1" />
+    <PackageReference Include="coverlet.collector" Version="10.1.0">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Romer.DataLib\Romer.DataLib.csproj" />
+    <ProjectReference Include="..\Romer.GeoLib\Romer.GeoLib.csproj" />
+  </ItemGroup>
+
+</Project>

@@ -1,0 +1,115 @@
+<resources>
+		
+    <string name="appName">Romer</string>
+	
+	<string name="error">Error</string>
+	<string name="notInGridArea">Out of grid area</string>
+	<!-- Shown instead of a grid reference when there's a location but no grid has been chosen. Tapping it opens the grid list. -->
+	<string name="chooseGridMsg">Choose a grid</string>
+	<string name="selectGridTitle">Select Grid</string>
+
+	<string name="newRouteName">New Route</string>
+
+	<string name="gps">GPS</string>
+	<string name="enableGpsTitle">Enable GPS</string>
+	<string name="enableGpsPrompt">Watch\'s GPS is not enabled. Enable it now?</string>
+	<string name="enableGpsSucceededMsg">GPS enabled</string>
+	<string name="enableGpsFailedMsg">Failed to enabled GPS. Please enable manually in Settings->Connectivity and try again.</string>
+	<string name="gpsNotDetectedMsg">Watch has no built-in GPS. Paired phone will be used to get location.</string>
+	
+	<string name="compass">Compass</string>
+	<string name="compassNotDetectedMsg">
+		Watch has no built-in compass. Compass display is not available.
+	</string>
+	<string name="compassAccuracyMsg">Move watch in a figure 8 to calibrate compass</string>
+	<!-- Compass bearing in degrees -->
+	<string name="compassBearing">%1$s\u00B0</string>
+	<!-- Shown below the compass bearing: the type of north it's relative to -->
+	<string name="compassNorthTypeMagnetic">M</string>
+	
+	<string name="noLocationMsg">No location</string>
+	<string name="continueOnPhoneMsg">Continue on phone</string>
+	<string name="operationCancelledMsg">Cancelled</string>
+	<string name="operationTimedOutMsg">Timed-out</string>
+	<string name="locateFailedMsg">Failed to get location</string>
+
+
+	<string name="locationPermissionPrompt">Access Location</string>
+    <string name="locationPermissionAskMsg">Allow this app to access your precise location?</string>
+    <string name="locationPermissionExplainMsg">
+		This app needs to access your precise location so that it can display a map reference. Tap the refresh icon to try again.
+	</string>
+    <string name="locationPermissionDeniedMsg">
+		This app\'s request to access your precise location was previously declined.
+		Please approve Location permission in the Permissions section in the app\'s settings.
+	</string>
+	
+    <string name="routeActivityTitle">Route</string>
+	<string name="listWaypoints">List waypoints</string>
+	<string name="addWaypoint">Add waypoint</string>
+	<string name="deleteLastWaypoint">Delete last waypoint</string>
+	<string name="sendToPhone">Send to phone</string>
+	<string name="newRoute">New route</string>
+
+	<string name="deleteTitle">Delete</string>
+    <string name="waypointAddedMsg">Waypoint added</string>
+    <string name="waypointsClearedMsg">Waypoints cleared</string>
+	<string name="waypointsDeleteLastPrompt">Delete the last waypoint?</string>
+	<string name="waypointsLastDeletedMsg">Last waypoint deleted</string>
+	<string name="noLocationForWaypointMsg">No location. Get a location fix first.</string>
+	<string name="newRouteTitle">New Route</string>
+	<string name="newRoutePrompt">Start a new route? This deletes all waypoints.</string>
+	<!-- Name of a route started on the watch. %1$s is today's date. -->
+	<string name="newRouteDatedName">Route %1$s</string>
+	<string name="newRouteStartedMsg">New route started</string>
+	
+    <string name="waypointsListActivityTitle">Waypoints (%1$d/%2$d)</string>
+	<string name="adjacentWaypointsFoundTitle">Nearby Waypoints</string>
+	<string name="adjacentWaypointsFoundPrompt">%1$s %2$s near to your current location. Mark %3$s as visited?</string>
+	<string name="adjacentWaypointsVisitedMsg">Marked %1$s as visited</string>
+
+	<string name="routeReceivedTitleMsg">Route received</string>
+	<string name="routeReceivedContentMsg">Route %1$s received from device</string>
+
+    <string name="deviceListActivityTitle">Select Device</string>
+    <string name="routeSentToDeviceMsg">Route sent to %1$s</string>
+    <string name="deviceOrAppNotFoundErrorMsg">
+		A paired device with the companion app installed was not found.
+		Please check that your watch is paired and connected, and that the companion app is installed on the other device.
+	</string>
+    <string name="deviceOrAppCommsErrorMsg">
+		An error occurred while communicating with the paired device.
+		Please check that your watch is paired and connected, and that the companion app is installed on the other device.
+	</string>
+
+	
+	
+	<plurals name="are">
+		<item quantity="one">is</item>
+		<item quantity="other">are</item>
+	</plurals>
+	<plurals name="them">
+		<item quantity="one">it</item>
+		<item quantity="other">them</item>
+	</plurals>
+
+	
+	<string name="justNowMsg">Just now</string>
+	<plurals name="secondsAgoCount">
+		<item quantity="one">%d second ago</item>
+		<item quantity="other">%d seconds ago</item>
+	</plurals>
+	<plurals name="minutesAgoCount">
+		<item quantity="one">%d minute ago</item>
+		<item quantity="other">%d minutes ago</item>
+	</plurals>
+	<plurals name="hoursAgoCount">
+		<item quantity="one">%d hour ago</item>
+		<item quantity="other">%d hours ago</item>
+	</plurals>
+	<plurals name="daysAgoCount">
+		<item quantity="one">%d day ago</item>
+		<item quantity="other">%d days ago</item>
+	</plurals>
+
+</resources>

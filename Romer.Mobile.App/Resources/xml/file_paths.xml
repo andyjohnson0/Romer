@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8" ?> 
+<paths xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Nominate cache directory as a place for sharing files. See <provider> section in AndroidManifest.xml -->
+    <cache-path name="cache_files" path="." />
+    <external-path name="external_files" path="." />
+</paths>

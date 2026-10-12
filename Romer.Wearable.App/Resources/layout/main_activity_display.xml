@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/innerFrameLayoutPadding">
+
+    <!-- Row 1: Time -->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:orientation="vertical"
+        android:gravity="center_horizontal|center_vertical"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/altitudeRow">
+        <!-- Compass bearing, with the type of north (M for magnetic) centred below it at half the size.
+             Shown with the compass. See SetCompassBezelMode(). -->
+        <LinearLayout
+            android:id="@+id/compassBearingLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center_horizontal"
+            android:visibility="gone">
+            <TextView
+                android:id="@+id/compassBearingTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:includeFontPadding="false"/>
+            <TextView
+                android:id="@+id/compassNorthTypeTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="-3dp"
+                android:includeFontPadding="false"
+                android:text="@string/compassNorthTypeMagnetic"/>
+        </LinearLayout>
+        <TextView
+            android:id="@+id/timeTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@android:style/TextAppearance.Small"/>
+    </LinearLayout>
+
+    <!-- Row 2: Altitude -->
+    <LinearLayout
+        android:id="@+id/altitudeRow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/locationRow">
+        <TextView
+            android:id="@+id/altitudeTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@android:style/TextAppearance.Medium"
+            android:baselineAligned="true"/>
+        <TextView
+            android:id="@+id/altitudeAccTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:textStyle="normal"
+            style="@android:style/TextAppearance.Small"
+            android:baselineAligned="true"/>
+    </LinearLayout>
+
+    <!-- Row 3: Location -->
+    <LinearLayout
+        android:id="@+id/locationRow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent">
+        <TextView
+            android:id="@+id/locationTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:textStyle="bold"
+            style="@android:style/TextAppearance.Large"
+            android:baselineAligned="true"
+            android:background="@color/backgroundSemiOpaque"
+            android:paddingLeft="@dimen/marginSizeSmall2"
+            android:paddingRight="@dimen/marginSizeSmall2"/>
+        <TextView
+            android:id="@+id/locationAccTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:textStyle="normal"
+            style="@android:style/TextAppearance.Small"
+            android:baselineAligned="true"/>
+    </LinearLayout>
+
+    <!-- Row 4: Buttons -->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center|top"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/locationRow"
+        app:layout_constraintBottom_toBottomOf="parent">
+        <androidx.appcompat.widget.AppCompatImageButton
+            android:id="@+id/refreshBtn"
+            android:layout_width="@dimen/buttonSizeStd"
+            android:layout_height="@dimen/buttonSizeStd"
+            android:src="@drawable/ic_sync"
+            android:background="@drawable/button_round_states"
+            android:backgroundTint="?attr/colorAccent"
+            android:scaleType="center"/>
+        <Space
+            android:layout_width="@dimen/marginSizeMedium"
+            android:layout_height="match_parent"/>
+        <androidx.appcompat.widget.AppCompatImageButton
+            android:id="@+id/menuBtn"
+            android:layout_width="@dimen/buttonSizeStd"
+            android:layout_height="@dimen/buttonSizeStd"
+            android:src="@drawable/ic_menu"
+            android:background="@drawable/button_round_states"
+            android:backgroundTint="?attr/colorAccent"
+            android:scaleType="center"/>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,18 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net10.0</TargetFramework>
+    <AssemblyName>Romer.DataLib</AssemblyName>
+    <RootNamespace>Romer.DataLib</RootNamespace>
+    <Nullable>enable</Nullable>
+    <Authors>Andrew Johnson</Authors>
+    <Product>Romer</Product>
+    <Copyright>Copyright © Andrew Johnson</Copyright>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="BlueToque.SharpGPX" Version="2.25.1230" />
+    <PackageReference Include="sqlite-net-pcl" Version="1.11.285" />
+  </ItemGroup>
+
+</Project>

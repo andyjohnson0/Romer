@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gpx version="1.1" creator="test" xmlns="http://www.topografix.com/GPX/1/1">
+  <metadata>
+    <name>Edinburgh Viewpoints</name>
+    <desc>Hills with a view &amp; a café</desc>
+    <time>2024-05-01T09:00:00Z</time>
+  </metadata>
+  <wpt lat="55.9441" lon="-3.1618">
+    <ele>251</ele>
+    <time>2024-05-01T10:15:00Z</time>
+    <name>Arthur's Seat</name>
+    <desc>Summit trig point</desc>
+  </wpt>
+  <wpt lat="55.9553" lon="-3.1830">
+    <ele>171</ele>
+    <time>2024-05-01T12:30:00Z</time>
+    <name>Calton Hill</name>
+  </wpt>
+  <wpt lat="55.9486" lon="-3.2008">
+    <name>Castle Esplanade</name>
+  </wpt>
+</gpx>

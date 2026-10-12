@@ -1,0 +1,54 @@
+﻿<PreferenceScreen
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+	
+	<PreferenceCategory
+        android:key="@string/prefs_navigation_key"
+        android:title="@string/prefs_navigation_title">
+		<ListPreference
+			android:key="@string/prefs_navigation_gridReferencePrecision_key"
+			android:title="@string/prefs_navigation_gridSystemPrecision_title"
+			android:summary="@string/prefs_navigation_gridSystemPrecision_summary"
+			android:dialogTitle="@string/prefs_navigation_gridSystemPrecision_title"
+			android:entries="@array/prefs_navigation_gridSystemPrecision_entries"
+			android:entryValues="@array/prefs_navigation_gridSystemPrecision_values" />
+		<ListPreference
+			android:key="@string/prefs_navigation_compassBezelMode_key"
+			android:title="@string/prefs_navigation_compassBezelMode_title"
+			android:summary="@string/prefs_navigation_compassBezelMode_summary"
+			android:dialogTitle="@string/prefs_navigation_compassBezelMode_title"
+			android:entries="@array/prefs_navigation_compassBezelMode_entries"
+			android:entryValues="@array/prefs_navigation_compassBezelMode_values" />
+	    <SwitchPreferenceCompat
+            android:key="@string/prefs_navigation_nightColoursMode_key"
+            android:title="@string/prefs_navigation_nightColoursMode_title"
+			android:summary="@string/prefs_navigation_nightColoursMode_summary"/>
+		<ListPreference
+			android:key="@string/prefs_navigation_measurementUnitSystem_key"
+			android:title="@string/prefs_navigation_measurementUnitSystem_title"
+			android:summary="@string/prefs_navigation_measurementUnitSystem_summary"
+			android:dialogTitle="@string/prefs_navigation_measurementUnitSystem_title"
+			android:entries="@array/prefs_navigation_measurementUnitSystem_entries"
+			android:entryValues="@array/prefs_navigation_measurementUnitSystem_values" />
+		<Preference
+			android:key="@string/prefs_advanced_key"
+			android:title="@string/prefs_advanced_title"
+			android:summary="@string/prefs_advanced_summary"
+			app:fragment="uk.andyjohnson.romer.wearable.app.preferences.AdvancedPreferencesFragment"/>
+	</PreferenceCategory>
+
+	
+	<PreferenceCategory
+        android:key="@string/prefs_app_key"
+        android:title="@string/prefs_app_title">
+		<uk.andyjohnson.romer.preference.InfoDialogPreference
+			android:key="@string/prefs_app_about_key"
+			android:title="@string/prefs_app_about_title"
+			android:summary="@string/prefs_app_about_summary"/>
+		<uk.andyjohnson.romer.preference.InfoDialogPreference
+			android:key="@string/prefs_app_credits_key"
+			android:title="@string/prefs_app_credits_title"
+			android:summary="@string/prefs_app_credits_summary"/>
+	</PreferenceCategory>
+	
+</PreferenceScreen>

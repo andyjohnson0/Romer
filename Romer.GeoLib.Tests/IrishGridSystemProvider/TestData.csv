@@ -1,0 +1,43 @@
+﻿## Test data for the Irish Grid provider
+## Format: latitude,longitude,10-figure Irish Grid reference
+##
+## Points spread across the island of Ireland. Each row is a coordinate conversion, not map data: the grid
+## references were converted in 2026 with Tailte Éireann's official co-ordinate converter
+## (https://gnss.tailte.ie/new-converter/), from ETRS89 at zero height (ETRS89 is within about a metre of WGS84), with each easting and northing
+## truncated to the metre. The converter offers a Republic of Ireland and a Northern Ireland transformation;
+## the Northern Ireland one was used for points the first doesn't cover.
+##
+## Romer's provider agrees with these values to within about 1 m. Before 2026 it used a fixed datum shift,
+## which was up to 30 m out away from the middle of Ireland.
+
+55.374429,-7.3718262,C 39872 58812
+55.302183,-6.2457275,D 11463 51991
+55.039041,-5.9848022,D 28879 23150
+54.103898,-6.2704468,J 13181 18577
+54.000252,-6.1033130,J 24422 07323
+52.965184,-6.0260010,T 32682 92279
+52.174234,-6.3642597,T 11952 03697
+52.127587,-6.9268799,X 73541 97788
+51.542011,-9.8476982,V 71863 33707
+51.887511,-9.5526123,V 93151 71670
+52.110762,-10.471773,V 30718 98255
+52.149923,-10.474949,Q 30649 02619
+52.415823,-9.9261475,Q 68996 31064
+53.141622,-9.8152542,L 78578 11629
+53.554587,-10.175400,L 55882 58253
+53.610891,-10.282860,L 48962 64741
+53.757643,-9.8904419,L 75365 80311
+54.313319,-9.7943115,F 83272 41989
+54.287675,-8.5363770,G 65117 37782
+55.089568,-8.3709812,B 76359 26980
+55.269532,-8.2459259,B 84414 46980
+55.066180,-7.4967957,C 32197 24430
+54.540207,-7.2949219,H 45684 65990
+53.599025,-8.5583496,M 63082 61142
+53.238921,-6.9653320,N 69131 21419
+52.674717,-8.7066650,R 52248 58363
+52.762892,-7.0971680,S 60996 68324
+52.261434,-8.2727051,R 81429 12173
+51.971346,-8.4045410,W 72247 79936
+54.001312,-7.3937988,H 39800 05945
+54.901882,-6.6247559,C 88270 06890

@@ -1,0 +1,13 @@
+﻿<resources>
+
+	<!-- User settings-->
+	<string name="prefs_navigation_key" translatable="false">prefs_navigation_key</string>
+	<string name="prefs_navigation_measurementUnitSystem_key" translatable="false">prefs_navigation_measurementUnitSystem_key</string>
+
+
+	<string name="prefs_app_key" translatable="false">prefs_app_key</string>
+	<string name="prefs_app_about_key" translatable="false">prefs_app_about_key</string>
+	<string name="prefs_app_credits_key" translatable="false">prefs_app_credits_key</string>
+	<string name="prefs_app_diagnostics_key" translatable="false">prefs_app_diagnostics_key</string>
+
+</resources>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gpx version="1.1" creator="test" xmlns="http://www.topografix.com/GPX/1/1">
+  <rte>
+    <name>Malham Loop</name>
+    <rtept lat="54.0610" lon="-2.1530"><ele>230</ele><name>Malham village</name></rtept>
+    <rtept lat="54.0720" lon="-2.1580"><ele>300</ele><name>Malham Cove</name></rtept>
+    <rtept lat="54.0640" lon="-2.1350"><ele>280</ele><name>Gordale Scar</name></rtept>
+  </rte>
+</gpx>

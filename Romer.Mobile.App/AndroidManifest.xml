@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:installLocation="auto">
+	<uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+	<application android:allowBackup="true" android:icon="@mipmap/ic_launcher" android:label="@string/appName" android:supportsRtl="true" android:theme="@style/AppTheme.Starting">
+		<!-- Added manually. See ShareActivity class. -->
+		<provider android:name="androidx.core.content.FileProvider" android:authorities="Romer.Mobile.App.fileprovider" android:exported="false" android:grantUriPermissions="true">
+			<meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/file_paths" />
+		</provider>
+	</application>
+</manifest>

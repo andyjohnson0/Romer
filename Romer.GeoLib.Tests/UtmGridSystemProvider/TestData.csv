@@ -1,0 +1,21 @@
+﻿## Test data for the Universal Transverse Mercator (UTM) provider
+## Format: latitude,longitude,UTM coordinates
+##
+## Latitudes and longitudes are approximate positions of the places named, originally looked up on
+## Google Maps (the CN Tower's comes from Wikipedia). The UTM coordinates were converted with
+## https://coordinates-converter.com/.
+##
+## Checked independently in 2026 with ProjNet (WGS 84 UTM zones): every row agrees to within 1 m.
+
+## Global
+50.77535,6.08389,32N 294409 5628898       # Aachen, Germany
+40.71435,-74.00597,18N 583960 4507523     # New York, USA
+-41.28646,174.77624,60S 313784 5427057    # Wellington, New Zealand
+-33.92487,18.42406,34S 261878 6243186     # Capetown, South Africa
+-32.89018,-68.84405,19S 514586 6360877    # Mendoza, Argentina
+64.83778,-147.71639,6N 466013 7190568     # Fairbanks, Alaska, USA
+56.79680,-5.00601,30N 377486 6296562      # Ben Nevis, Scotland, UK
+84,-5.00601,30N 476594 9328501            # Latitude 84
+
+## North America
+43.642567,-79.387139,17N 630084 4833438   # CN tower (from Wikipedia)

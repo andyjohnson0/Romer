@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<declare-styleable name="RouteMapView">
+		<attr name="routeStrokeColor" format="color"/>
+		<attr name="routeStrokeWidth" format="float"/>
+		<attr name="waypointMarkerColor" format="color"/>
+		<attr name="waypointMarkerDiameter" format="float"/>
+		<attr name="showWaypointNumber" format="boolean"/>
+		<attr name="showWaypointLabel" format="boolean"/>
+		<attr name="waypointLabelColor" format="color"/>
+		<attr name="waypointLabelMaxLength" format="integer"/>
+		<attr name="waypointTouchRadius" format="dimension"/>
+	</declare-styleable>
+</resources>

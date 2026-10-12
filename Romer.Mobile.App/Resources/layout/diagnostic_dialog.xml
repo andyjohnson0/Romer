@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="@dimen/dialogMargin">
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/diagnosticsTitle"
+            android:textAlignment="center"
+            android:textStyle="bold"
+            style="@android:style/TextAppearance.Large"/>
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/marginSizeLarge"/>
+        <TextView
+            android:id="@+id/diagnosticsInfo1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/diagnosticsInfo1"/>
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/marginSizeMedium"/>
+        <!-- One checkable row per device: this phone and each reachable watch -->
+        <ListView
+            android:id="@+id/deviceList"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:choiceMode="multipleChoice"/>
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/marginSizeMedium"/>
+        <TextView
+            android:id="@+id/diagnosticsInfo2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/diagnosticsInfo2"/>
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/marginSizeLarge"/>
+
+        <ImageButton
+            android:id="@+id/copyBtn"
+            android:tooltipText="@string/copyToClipboard"
+            android:contentDescription="@string/copyToClipboard"
+            android:src="@drawable/ic_content_copy_white"
+            android:background="@drawable/button_round_states"
+            android:backgroundTint="@color/colorAccent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"/>
+
+    </LinearLayout>
+
+    <ProgressBar
+        android:id="@+id/progress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:indeterminate="true"
+        android:layout_gravity="center"
+        android:visibility="invisible"/>
+</FrameLayout>

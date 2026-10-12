@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/marginSizeMedium"
+    card_view:cardElevation="4dp"
+    card_view:cardCornerRadius="8dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="@dimen/marginSizeMedium">
+        <TextView
+            android:id="@+id/cardHeading"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@android:style/TextAppearance.Large"
+		    android:textStyle="bold"/>
+	    <Space
+		    android:layout_width="match_parent"
+		    android:layout_height="@dimen/marginSizeLarge"/>
+        <com.github.mikephil.charting.charts.BarChart
+            android:id="@+id/chart"
+            android:layout_width="match_parent"
+            android:layout_height="0dp" 
+            android:layout_margin="@dimen/marginSizeMedium"/>
+        <Space
+		    android:layout_width="match_parent"
+		    android:layout_height="@dimen/marginSizeLarge"/>
+        <TextView
+            android:id="@+id/cardFooter"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@android:style/TextAppearance.Small"
+		    android:textStyle="italic"/>
+    </LinearLayout>
+	
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,28 @@
+﻿## Route1 test data
+## Format: time,latitude,longitude,altitude
+##
+## A synthetic route in the Peak District, from Edale over Kinder Scout and back to Edale station, written
+## by hand for this repository. It isn't an export from any mapping app or service.
+## Coordinates are approximate positions of public places, and names are place names. Altitudes and times
+## are made up. Covered by the repository's licence.
+##
+## It includes a repeated point (a rest stop, giving a zero-length leg with no climb), climbs and descents,
+## and ends lower than it starts, so total ascent and total descent differ.
+##
+## Expected values, worked out independently of Romer's code (haversine with a 6371 km radius, Naismith's
+## rule at 5 km/h plus 1 hour per 600 m of ascent):
+##   Legs (km): 1.4440, 1.5320, 1.1359, 1.9008, 1.1032, 0.0000, 2.9105, 1.7752
+##   Total distance: 11.8014 km
+##   Total ascent:   30 + 70 + 170 + 93 + 11 = 374 m
+##   Total descent:  43 + 351 = 394 m
+##   Walking time:   11.8014 / 5 + 374 / 600 = 2.98362 h = 2:59:01
+##
+2024-05-18T09:30:00,53.3713,-1.8170,270     # Edale, Old Nag's Head
+2024-05-18T09:50:00,53.3640,-1.8350,300     # Upper Booth
+2024-05-18T10:10:00,53.3628,-1.8580,370     # Foot of Jacob's Ladder
+2024-05-18T10:45:00,53.3640,-1.8750,540     # Edale Cross
+2024-05-18T11:15:00,53.3810,-1.8780,633     # Kinder Low trig point
+2024-05-18T11:35:00,53.3900,-1.8710,590     # Kinder Downfall
+2024-05-18T12:05:00,53.3900,-1.8710,590     # Kinder Downfall, after a rest
+2024-05-18T12:50:00,53.3780,-1.8320,601     # Grindslow Knoll
+2024-05-18T13:30:00,53.3647,-1.8172,250     # Edale station

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<!-- View IDs that InfoDialogFragment expects in the apps' info dialog layouts -->
+	<item name="icon" type="id"/>
+	<item name="title" type="id"/>
+	<item name="subTitle" type="id"/>
+	<item name="info" type="id"/>
+	<item name="link" type="id"/>
+</resources>

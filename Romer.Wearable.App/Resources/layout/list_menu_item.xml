@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- Use this for a menu item that contains a simple navigation icon -->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:paddingTop="@dimen/marginSizeMedium"
+    android:paddingLeft="@dimen/marginSizeMedium">
+    <ImageView
+        android:id="@+id/item_img"
+        android:layout_width="@dimen/buttonSizeStd"
+        android:layout_height="@dimen/buttonSizeStd"
+        android:layout_gravity="center_vertical"
+        android:scaleType="center"
+        android:tint="@color/enable_disable_image_view"
+        android:tintMode="src_atop"/>
+    <TextView
+        android:id="@+id/item_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@android:style/TextAppearance.Medium"
+        android:textColor="@color/enable_disable_text"
+        android:paddingLeft="@dimen/marginSizeMedium"
+        android:layout_gravity="left|center_vertical"
+        android:baselineAligned="false"/>
+</LinearLayout>

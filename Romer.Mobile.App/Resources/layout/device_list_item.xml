@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:paddingTop="@dimen/listItemPadding"
+    android:paddingLeft="@dimen/listItemPadding">
+    <ImageButton
+        android:id="@+id/item_btn"
+        android:layout_width="@dimen/buttonSizeStd"
+        android:layout_height="@dimen/buttonSizeStd"
+        android:background="@drawable/button_round_states"
+        android:foregroundTint="@color/buttonBackground"
+        android:layout_gravity="center_vertical"
+        android:scaleType="center"/>
+    <TextView
+        android:id="@+id/item_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@android:style/TextAppearance.Medium"
+        android:paddingLeft="@dimen/listItemMargin"
+        android:layout_gravity="left"
+        android:baselineAligned="false"/>
+</LinearLayout>

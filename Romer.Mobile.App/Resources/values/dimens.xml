@@ -1,0 +1,16 @@
+<resources>
+    <dimen name="fabMargin">16dp</dimen>
+    <!-- Space below scrolling content, so that it can scroll clear of a floating action button: 56dp button plus margins -->
+    <dimen name="fabClearance">88dp</dimen>
+    <dimen name="dialogMargin">24dp</dimen>
+	
+    <dimen name="listItemMargin">4dp</dimen>
+    <dimen name="listItemPadding">4dp</dimen>
+
+	<!-- Button sizes -->
+	<dimen name="buttonSizeStd">48dp</dimen>
+	
+    <dimen name="marginSizeLarge">12dp</dimen>
+    <dimen name="marginSizeMedium">8dp</dimen>
+    <dimen name="marginSizeSmall">4dp</dimen>
+</resources>
